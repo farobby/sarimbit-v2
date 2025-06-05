@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardElevation="4dp"
+    app:cardCornerRadius="12dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <!-- Status Kanan Atas -->
+        <TextView
+            android:id="@+id/tvStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Baru"
+            android:background="@drawable/bg_status_yellow"
+            android:textColor="#000000"
+            android:padding="6dp"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <!-- Order ID -->
+        <TextView
+            android:id="@+id/tvOrderId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Order #120425"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/tvStatus"
+            app:layout_constraintHorizontal_bias="0.0"/>
+
+        <!-- Customer Info -->
+        <TextView
+            android:id="@+id/tvCustomer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Jennie - 26/04/2025"
+            android:textSize="13sp"
+            app:layout_constraintTop_toBottomOf="@id/tvOrderId"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <!-- Price -->
+        <TextView
+            android:id="@+id/tvPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rp 200.000"
+            android:textStyle="bold"
+            android:textColor="#004AAD"
+            app:layout_constraintTop_toBottomOf="@id/tvCustomer"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <!-- Tombol Proses -->
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/tvProcess"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Proses"
+            android:background="@drawable/bg_status_blue"
+            android:textColor="#000000"
+            android:padding="6dp"
+            android:textSize="12sp"
+            app:layout_constraintTop_toTopOf="@id/tvStatus"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="@id/tvPrice"
+            app:layout_constraintVertical_bias="1.0"
+            android:layout_marginTop="24dp"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

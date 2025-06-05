@@ -1,0 +1,121 @@
+{
+  "project_info": {
+    "project_number": "427253955401",
+    "project_id": "optik-serambit",
+    "storage_bucket": "optik-serambit.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:427253955401:android:c73519ac122bfdef717898",
+        "android_client_info": {
+          "package_name": "com.optik.sarimbit"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "427253955401-t7schptjfk784ouav090br78r7i8jhu1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.optik.sarimbit",
+            "certificate_hash": "5a6df11ebdeef728eb40625801c5a1b1638c6885"
+          }
+        },
+        {
+          "client_id": "427253955401-fo4pst4emqkf7fs2qa9r989tsqjfkbuv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDGoVlSKF-O8HPp-03KChvZAawTBhtKXog"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "427253955401-fo4pst4emqkf7fs2qa9r989tsqjfkbuv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:427253955401:android:afa04bfe08cb4e3d717898",
+        "android_client_info": {
+          "package_name": "com.optik.serambit"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "427253955401-fvkeu5e4ecgdokirh6t27e9m9i3a5qc9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.optik.serambit",
+            "certificate_hash": "5a6df11ebdeef728eb40625801c5a1b1638c6885"
+          }
+        },
+        {
+          "client_id": "427253955401-fo4pst4emqkf7fs2qa9r989tsqjfkbuv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDGoVlSKF-O8HPp-03KChvZAawTBhtKXog"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "427253955401-fo4pst4emqkf7fs2qa9r989tsqjfkbuv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:427253955401:android:d07d9ea3638b0087717898",
+        "android_client_info": {
+          "package_name": "com.option.sarambit"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "427253955401-91sqgso61kpl347uts1po0feeuadsupt.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.option.sarambit",
+            "certificate_hash": "5a6df11ebdeef728eb40625801c5a1b1638c6885"
+          }
+        },
+        {
+          "client_id": "427253955401-fo4pst4emqkf7fs2qa9r989tsqjfkbuv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDGoVlSKF-O8HPp-03KChvZAawTBhtKXog"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "427253955401-fo4pst4emqkf7fs2qa9r989tsqjfkbuv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

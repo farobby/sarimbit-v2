@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="8dp"
+    android:layout_marginHorizontal="16dp"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="4dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="12dp">
+
+        <!-- Gambar Toko -->
+        <ImageView
+            android:id="@+id/storeImage"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:src="@drawable/background_introduction"
+            android:background="@android:color/darker_gray"/>
+
+        <!-- Nama Toko -->
+        <TextView
+            android:id="@+id/storeName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="RSUD BOGOR"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            app:layout_constraintStart_toEndOf="@id/storeImage"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginStart="12dp"/>
+
+        <!-- Jam Operasional -->
+        <LinearLayout
+            android:id="@+id/layoutHours"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintStart_toEndOf="@id/storeImage"
+            app:layout_constraintTop_toBottomOf="@id/storeName"
+            android:layout_marginTop="4dp"
+            android:layout_marginStart="12dp">
+
+            <ImageView
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:src="@drawable/ic_calendar_month_24"/>
+
+            <TextView
+                android:id="@+id/storeHours"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="09:00 - 20:00 WIB"
+                android:textSize="12sp"
+                android:textColor="@android:color/darker_gray"
+                android:layout_marginStart="4dp"/>
+        </LinearLayout>
+
+        <!-- Nomor Telepon -->
+        <LinearLayout
+            android:id="@+id/layoutPhone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintStart_toEndOf="@id/storeImage"
+            app:layout_constraintTop_toBottomOf="@id/layoutHours"
+            android:layout_marginTop="4dp"
+            android:layout_marginStart="12dp">
+
+            <ImageView
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:src="@drawable/ic_call_24"/>
+
+            <TextView
+                android:id="@+id/storePhone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="(0251) 8327758"
+                android:textSize="12sp"
+                android:textColor="@android:color/holo_blue_dark"
+                android:autoLink="phone"
+                android:layout_marginStart="4dp"/>
+        </LinearLayout>
+
+        <!-- Tombol Aksi -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingHorizontal="@dimen/size_32"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/storeImage"
+            app:layout_constraintTop_toBottomOf="@id/layoutPhone"
+            android:layout_marginTop="12dp"
+            android:layout_marginStart="12dp">
+            <TextView
+                android:layout_marginTop="@dimen/size_12"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:padding="@dimen/size_8"
+                android:id="@+id/btnMaps"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Lihat Gmaps"
+                android:textSize="12sp"
+                android:textColor="@android:color/black"
+                android:drawableStart="@drawable/ic_location_pin_24"
+                android:background="@drawable/background_8_white_border"/>
+            <TextView
+                android:layout_marginTop="@dimen/size_12"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:padding="@dimen/size_8"
+                android:id="@+id/btnChat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Hubungi Toko"
+                android:textSize="12sp"
+                android:textColor="@android:color/black"
+                android:drawableStart="@drawable/ic_whatsapp"
+                android:background="@drawable/background_8_white_border"/>
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

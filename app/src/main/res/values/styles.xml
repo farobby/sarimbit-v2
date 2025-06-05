@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="ProfileButtonStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:backgroundTint">@color/dark_blue</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:drawableEnd">@drawable/baseline_keyboard_arrow_right_24</item>
+    </style>
+    <style name="ProfileButtonLogoutStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:backgroundTint">@android:color/holo_red_light</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:drawableEnd">@drawable/baseline_keyboard_arrow_right_24</item>
+    </style>
+    <style name="CustomSpinnerStyle" parent="Widget.AppCompat.Spinner">
+        <item name="android:background">@drawable/spinner_background</item>
+        <item name="android:drawableEnd">@drawable/ic_arrow_down_24</item> <!-- Dropdown Icon -->
+        <item name="android:paddingEnd">16dp</item>
+    </style>
+
+</resources>

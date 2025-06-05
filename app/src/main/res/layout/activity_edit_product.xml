@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Header -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#004D87"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Edit Produk"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/btnClose"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:contentDescription="Close"
+                android:src="@drawable/ic_close_24"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+            <!-- Nama Produk -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="Nama Produk*"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/etProductName"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/background_8_white_border"
+                android:hint="Nama Produk"
+                android:padding="12dp"
+                android:text="Designer Frames"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+
+            <!-- Harga Produk -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="HargaProduk*"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/etPrice"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/background_8_white_border"
+                android:hint="Harga Produk"
+                android:padding="12dp"
+                android:text="200.000"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+
+            <!-- Stok -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Stok*"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/etStock"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/background_8_white_border"
+                android:hint="Jumlah Stok"
+                android:padding="12dp"
+                android:text="14"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+
+            <!-- Status -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Status Produk"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/btnActive"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Aktif" />
+
+                <TextView
+                    android:id="@+id/btnNonActive"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Nonaktif" />
+            </LinearLayout>
+
+            <!-- Simpan dan Hapus -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:gravity="center"
+                    android:id="@+id/btnSave"
+                    android:layout_width="0dp"
+                    android:layout_height="64dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/background_blue"
+                    android:text="Simpan"
+                    android:textColor="#FFFFFF" />
+
+                <TextView
+                    android:background="@drawable/background_red"
+                    android:id="@+id/btnDelete"
+                    android:layout_width="0dp"
+                    android:layout_height="64dp"
+                    android:gravity="center"
+                    android:layout_marginStart="8dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="#FFD6D6"
+                    android:text="Hapus"
+                    android:textColor="#FF0000" />
+            </LinearLayout>
+
+            <!-- Peringatan -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/bg_status_yellow"
+                android:padding="12dp"
+                android:fontFamily="@font/poppins_bold"
+                android:text="Peringatan: Tindakan hapus tidak dapat dipulihkan kembali!"
+                android:textAlignment="center"
+                android:textColor="@color/orange"
+                android:textStyle="bold"
+                />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

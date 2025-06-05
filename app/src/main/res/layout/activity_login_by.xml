@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- White Card Background -->
+    <LinearLayout
+        android:id="@+id/card_container"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:background="@android:color/white"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:elevation="4dp">
+
+        <!-- Title -->
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Optik Sarimbit"
+            android:textSize="20sp"
+            android:textColor="@android:color/white"
+            android:gravity="center"
+            android:background="#1A4D80"
+            android:padding="32dp"
+            android:textStyle="bold" />
+
+        <!-- Subheading -->
+        <TextView
+            android:id="@+id/subheading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pilih  Jenis Login"
+            android:textSize="24sp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:layout_marginTop="@dimen/size_32"
+            android:textColor="#000000" />
+
+        <!-- Admin Button -->
+        <LinearLayout
+            android:id="@+id/llAdmin"
+            android:layout_marginHorizontal="@dimen/size_40"
+            android:layout_marginTop="@dimen/size_48"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:orientation="horizontal"
+            android:padding="16dp"
+            android:background="@drawable/background_login_admin"
+            android:layout_marginBottom="16dp"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:text="A"
+                android:textColor="#1A4D80"
+                android:textStyle="bold"
+                android:background="@drawable/background_white_circle"
+                android:gravity="center"
+                android:textSize="18sp"
+                android:layout_marginEnd="12dp"/>
+
+            <LinearLayout
+                android:layout_marginStart="@dimen/size_16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Admin"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Login untuk pengelolaan toko"
+                    android:textColor="@android:color/white"
+                    android:textSize="12sp"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- User Button -->
+        <LinearLayout
+            android:id="@+id/llUser"
+            android:layout_marginHorizontal="@dimen/size_40"
+            android:layout_marginTop="@dimen/size_40"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:padding="16dp"
+            android:layout_height="100dp"
+            android:background="@drawable/background_login_user"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:text="U"
+                android:textColor="#B34242"
+                android:textStyle="bold"
+                android:background="@drawable/background_white_circle"
+                android:gravity="center"
+                android:textSize="18sp"
+                android:layout_marginEnd="12dp"/>
+
+            <LinearLayout
+                android:layout_marginStart="@dimen/size_16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="User"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Login untuk pelanggan"
+                    android:textColor="@android:color/white"
+                    android:textSize="12sp"/>
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

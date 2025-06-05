@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:layout_marginTop="@dimen/size_8"
+        android:paddingHorizontal="16dp"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/ivClose"
+            android:layout_width="@dimen/size_32"
+            android:layout_height="@dimen/size_32"
+            android:background="@drawable/background_8_black"
+            android:padding="8dp"
+            android:src="@drawable/ic_close_24"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/ivCart"
+            android:layout_width="@dimen/size_42"
+            android:layout_height="@dimen/size_42"
+            android:background="@drawable/background_8_black"
+            android:padding="8dp"
+            android:src="@drawable/ic_shopping_bag_24"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_marginTop="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:paddingBottom="16dp"
+            android:layout_height="wrap_content">
+
+
+            <!-- Product Images -->
+            <ImageView
+                android:src="@drawable/background_introduction"
+                android:id="@+id/image_product"
+                android:layout_width="match_parent"
+                android:layout_height="350dp"
+                android:scaleType="centerCrop"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <!-- Add to Cart Button -->
+            <TextView
+                android:id="@+id/btn_add_to_cart"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginVertical="16dp"
+                android:background="@android:color/holo_red_dark"
+                android:padding="8dp"
+                android:text="Tambahkan Ke Keranjang"
+                android:textAlignment="center"
+                android:textColor="@android:color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/image_product" />
+
+            <!-- Product Title and Price -->
+            <TextView
+                android:id="@+id/tv_product_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="32dp"
+                android:text="Virtual Glasses"
+                android:textColor="@android:color/white"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@id/tv_product_price"
+                app:layout_constraintEnd_toStartOf="@id/tv_product_price"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/btn_add_to_cart" />
+
+            <TextView
+                android:id="@+id/tv_product_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="32dp"
+                android:text="$235.50"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/btn_add_to_cart" />
+
+            <TextView
+                android:id="@+id/tv_brand"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="16dp"
+                android:text="Nama Brand"
+                android:textColor="@android:color/white"
+                android:textSize="14sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_product_name" />
+            <!-- Frame Color -->
+            <TextView
+                android:id="@+id/tv_frame_color"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="24dp"
+                android:text="Frame Color"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_brand" />
+
+            <!-- Frame Color Options (Horizontal RecyclerView) -->
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_view_colors"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="16dp"
+                android:orientation="horizontal"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_frame_color" />
+            <TextView
+                android:id="@+id/tv_variants"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="24dp"
+                android:text="Jenis Frame"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/recycler_view_colors" />
+
+            <!-- Frame Color Options (Horizontal RecyclerView) -->
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_view_variants"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="16dp"
+                android:orientation="horizontal"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_variants" />
+
+            <!-- Product Details -->
+            <TextView
+                android:layout_marginTop="@dimen/size_16"
+                android:id="@+id/tv_details"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/size_16"
+                android:text="Details"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/recycler_view_variants" />
+
+            <TextView
+                android:id="@+id/tv_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/size_16"
+                android:layout_marginTop="24dp"
+                android:text="kacamata ini berasal dari brand wkdak sjayvornvmalaj9oaketc8xa0--taf"
+                android:textColor="@android:color/white"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_details" />
+
+            <!-- Shipping and Returns -->
+            <TextView
+                android:id="@+id/tv_shipping_returns"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/size_16"
+                android:layout_marginTop="@dimen/size_32"
+                android:text="Proses pembuatan dan Pickup Produk"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_description" />
+
+            <TextView
+                android:layout_marginTop="12dp"
+                android:layout_marginHorizontal="@dimen/size_16"
+                android:id="@+id/tvNote1"
+                app:layout_constraintTop_toBottomOf="@+id/tv_shipping_returns"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/ic_check_24"
+                android:drawablePadding="8dp"
+                android:gravity="center_vertical"
+                android:text="Jika sudah melakukan pembayaran orderan sebelum jam 14.00 wib akan langsung di proses dihari yang sama"
+                android:textColor="@android:color/white"
+                android:textSize="14sp" />
+            <TextView
+                android:layout_marginTop="12dp"
+                android:layout_marginHorizontal="@dimen/size_16"
+                android:id="@+id/tvNote2"
+                app:layout_constraintTop_toBottomOf="@+id/tvNote1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:drawableStart="@drawable/ic_check_24"
+                android:drawablePadding="8dp"
+                android:text="Estimasi produk siap di pickup 1-4 hari setelah pembayaran"
+                android:textColor="@android:color/white"
+                android:textSize="14sp" />
+            <TextView
+                android:layout_marginTop="12dp"
+                android:layout_marginHorizontal="@dimen/size_16"
+                android:id="@+id/tvNote3"
+                android:gravity="center_vertical"
+                app:layout_constraintTop_toBottomOf="@+id/tvNote2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/ic_check_24"
+                android:drawablePadding="8dp"
+                android:text="Jika orderan siap di pickup maka admin akan mengirimkan pesan melalui whatsapp untuk pemberitahuan pickup di toko kami"
+                android:textColor="@android:color/white"
+                android:textSize="14sp" />
+
+<!--            <TextView-->
+<!--                android:layout_marginTop="32dp"-->
+<!--                android:drawableRight="@drawable/baseline_keyboard_arrow_right_24"-->
+<!--                android:layout_marginHorizontal="@dimen/size_16"-->
+<!--                android:id="@+id/tv_product_specs"-->
+<!--                android:textSize="16sp"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Product Specifications"-->
+<!--                android:textColor="@android:color/white"-->
+<!--                android:textStyle="bold"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                app:layout_constraintTop_toBottomOf="@id/tvNote3" />-->
+
+<!--            <TextView-->
+<!--                android:layout_marginTop="24dp"-->
+<!--                android:layout_marginHorizontal="@dimen/size_16"-->
+<!--                android:drawableRight="@drawable/baseline_keyboard_arrow_right_24"-->
+<!--                android:id="@+id/tv_additional_details"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:textSize="16sp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Additional Details"-->
+<!--                android:textColor="@android:color/white"-->
+<!--                android:textStyle="bold"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                app:layout_constraintTop_toBottomOf="@id/tv_product_specs" />-->
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.core.widget.NestedScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
