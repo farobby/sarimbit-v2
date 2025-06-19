@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
-    <uses-permission android:name="android.permission.INTERNET"/>
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"
-        android:maxSdkVersion="32"/>
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
 
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission
+        android:name="android.permission.READ_EXTERNAL_STORAGE"
+        android:maxSdkVersion="32" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -16,7 +18,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.OptikSerambit"
-        tools:targetApi="31" >
+        tools:targetApi="31">
+        <activity
+            android:name=".app.ActivityDetailLaporan"
+            android:exported="false" />
+        <activity
+            android:name=".app.ActivityLaporan"
+            android:exported="false" />
         <activity
             android:name=".app.AppLogoActivity"
             android:exported="true"
@@ -28,56 +36,78 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".app.IntroductionActivity"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".app.LoginActivity"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".app.RegistrationActivity"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".app.HomeActivity"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".app.FavoriteActivity"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".app.LocationOptikActivity"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".app.StoreDetailActivity"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".app.DetailProductActivity"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".app.CartActivity"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".app.SearchActivity"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".app.ActivityChat"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".app.DetailOrderActivity"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".app.PaymentActivity"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".app.PaymentConfirmationActivity"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".app.HistoryOrderActivity"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".app.ActivityLoginBy"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".app.LoginAdminActivity"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".app.VerifyOTPActivity"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".app.ActivityAdminHome"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".app.OrdersActivity"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".app.OrdersDetailAdminActivity"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".app.ManageProductActivity"
+        <activity
+            android:name=".app.IntroductionActivity"
             android:screenOrientation="portrait" />
-        <activity android:name=".app.EditProductActivity"
-            android:screenOrientation="portrait"
-        />
-        <activity android:name=".app.UploadProductActivity"
-            android:screenOrientation="portrait"
-        />
+        <activity
+            android:name=".app.LoginActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".app.RegistrationActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".app.HomeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".app.FavoriteActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".app.LocationOptikActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".app.StoreDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".app.DetailProductActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".app.CartActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".app.SearchActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".app.ActivityChat"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".app.DetailOrderActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".app.PaymentActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".app.PaymentConfirmationActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".app.HistoryOrderActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".app.ActivityLoginBy"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".app.LoginAdminActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".app.VerifyOTPActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".app.ActivityAdminHome"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".app.OrdersActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".app.OrdersDetailAdminActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".app.ManageProductActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".app.EditProductActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".app.UploadProductActivity"
+            android:screenOrientation="portrait" />
     </application>
 
 </manifest>

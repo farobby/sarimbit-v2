@@ -1,6 +1,6 @@
 package com.optik.sarimbit.app
 
-import android.os.Bundle
+import  android.os.Bundle
 import com.optik.sarimbit.app.util.BaseView
 import com.optik.sarimbit.app.util.SessionManager
 import com.optik.sarimbit.databinding.ActivityAdminHomeBinding
@@ -19,6 +19,9 @@ class ActivityAdminHome: BaseView() {
         }
         binding.btnKelolaProduk.setOnClickListener {
             goToPage(ManageProductActivity::class.java)
+        }
+        binding.btnLaporan.setOnClickListener {
+            goToPage(ActivityLaporan::class.java)
         }
         binding.ivLogOut.setOnClickListener {
             SessionManager.clearData(this)

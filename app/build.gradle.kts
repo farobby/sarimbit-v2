@@ -7,7 +7,7 @@ plugins {
 
 android {
     namespace = "com.optik.sarimbit"
-    compileSdk = 34
+    compileSdk = 35
 
     defaultConfig {
         applicationId = "com.optik.sarimbit"
@@ -58,6 +58,8 @@ dependencies {
     implementation(libs.flexBox)
     implementation(libs.authGoogle)
     implementation(libs.pinView)
+    implementation(libs.androidx.activity)
+    implementation(libs.androidx.constraintlayout)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)

@@ -151,4 +151,33 @@
             android:textColor="#FFFFFF" />
     </LinearLayout>
 
+    <LinearLayout
+        android:id="@+id/btnLaporan"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginHorizontal="12dp"
+        android:layout_marginBottom="12dp"
+        android:background="@drawable/background_8_green"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="?attr/selectableItemBackground"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="8dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Laporan Bulanan"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lihat dan unduh laporan penjualan"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+
 </LinearLayout>

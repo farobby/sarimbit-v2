@@ -17,6 +17,8 @@ glideVersion="4.14.2"
 flexBox="3.0.0"
 authGoogleVersion="21.3.0"
 pinView='1.4.4'
+activity = "1.10.1"
+constraintlayout = "2.2.1"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -38,6 +40,8 @@ glide = { group = "com.github.bumptech.glide", name = "glide", version.ref = "gl
 flexBox = { group = "com.google.android.flexbox", name = "flexbox", version.ref = "flexBox" }
 authGoogle = { group = "com.google.android.gms", name = "play-services-auth", version.ref = "authGoogleVersion" }
 pinView = { group = "io.github.chaosleung", name = "pinview", version.ref = "pinView" }
+androidx-activity = { group = "androidx.activity", name = "activity", version.ref = "activity" }
+androidx-constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
 jetbrains-kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }

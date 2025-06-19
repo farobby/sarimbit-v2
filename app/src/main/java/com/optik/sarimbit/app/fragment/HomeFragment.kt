@@ -57,7 +57,7 @@ class HomeFragment : BaseFragment() {
     ): View {
         binding = FragmentHomeBinding.inflate(layoutInflater)
 
-        // Set the Toolbar as ActionBar (if needed)
+        // Set the Toolbar as ActionBar
         (activity as? AppCompatActivity)?.setSupportActionBar(binding.toolbar)
 
         // Enable menu in Fragment
